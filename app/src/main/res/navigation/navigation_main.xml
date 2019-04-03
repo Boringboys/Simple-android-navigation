@@ -11,8 +11,8 @@
         android:label="home_fragment"
         tools:layout="@layout/home_fragment" >
         <action
-            android:id="@+id/action_homeFragment_to_noticeFragment"
-            app:destination="@id/noticeFragment" />
+            android:id="@+id/action_homeFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
     </fragment>
     <fragment
         android:id="@+id/dashboardFragment"
@@ -20,18 +20,13 @@
         android:label="dashboard_fragment"
         tools:layout="@layout/dashboard_fragment" >
         <action
-            android:id="@+id/action_dashboardFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_dashboardFragment_to_noticeFragment"
+            app:destination="@id/noticeFragment" />
     </fragment>
     <fragment
         android:id="@+id/noticeFragment"
         android:name="com.example.navigation_project.NoticeFragment"
         android:label="notice_fragment"
-        tools:layout="@layout/notice_fragment" >
-        <action
-            android:id="@+id/action_noticeFragment_to_dashboardFragment"
-            app:destination="@id/dashboardFragment" />
-    </fragment>
-
+        tools:layout="@layout/notice_fragment" />
 
 </navigation>
